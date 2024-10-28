@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>Simple Calculator</h2>
+    <label>Enter first number:</label>
+    <input type="number" [(ngModel)]="num1" placeholder="Enter first number" />
+    
+    <label>Enter second number:</label>
+    <input type="number" [(ngModel)]="num2" placeholder="Enter second number" />
+  
+    <button (click)="calculate()">Calculate</button>
+  
+    <div *ngIf="results">
+      <p>Sum: {{ results.sum }}</p>
+      <p>Subtraction: {{ results.subtraction }}</p>
+      <p>Multiplication: {{ results.multiplication }}</p>
+      <p>Division: {{ results.division }}</p>
+    </div>
+  </div>  
